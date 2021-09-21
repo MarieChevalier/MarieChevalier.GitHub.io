@@ -1,0 +1,119 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    color: black;
+    gap: 4.5%;
+}
+
+
+
+@font-face {
+    font-family: 'Avara';
+    font-weight: normal;
+    src: url('Avara-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Avara';
+    font-style: italic;
+    src: url('Avara-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Avara';
+    font-weight: 900;
+    src: url('Avara-Black.woff2') format('woff2');
+}
+
+
+.entete {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    padding: 20px;
+}
+
+.entete a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Avara';
+    font-weight: bold;
+}
+
+.titre {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    grid-template-columns: 1;
+    font-family: 'Avara';
+    font-weight: 900;
+    font-size: clamp(40px,6vw,60px);
+    
+}
+
+.sous-titre {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    grid-row-start: 2;
+    font-family: 'Avara';
+    font-weight: bold;
+    font-style: italic;
+    font-size: clamp(30px,5vw,45px);
+    margin-top: -15px;
+    margin-left: 60px;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    border: 2px solid;
+    border-radius: 150px;
+    border-color: black;
+}
+
+.contact {
+    text-align: right;
+    font-weight: bold;
+}
+
+.à-propos {
+    text-align: right;
+    align-self: center;
+    font-weight: bold; 
+}
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 4%;
+    padding : 30px; 
+    margin-top: 50px;
+    max-width: 1920px;
+}
+
+@media (min-width:660px){
+    .index{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.item-h {
+    grid-column: span 2;
+}
+
+.item-v {
+    grid-row: span 2;
+}
+
+.item-cube {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
