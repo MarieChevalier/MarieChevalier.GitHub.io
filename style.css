@@ -2,166 +2,190 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-    gap: 4.5%;
-}
-
 @font-face {
-    font-family: 'Avara';
+    font-family: 'Redaction 50';
+    src: url('typo/Redaction_50-Regular.woff2') format('woff2');
     font-weight: normal;
-    src: url('Avara-Bold.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: 'Avara';
-    font-style: italic;
-    src: url('Avara-BoldItalic.woff2') format('woff2');
+.img {
+    max-height: 100%;
+    width: auto;
 }
 
-@font-face {
-    font-family: 'Avara';
-    font-weight: 900;
-    src: url('Avara-Black.woff2') format('woff2');
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    margin-top: 0px;
+    display: inline-block;
 }
 
-.entete {
+
+.header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 50px;
-    padding: 20px;
+    width: 100%;
+    grid-template-columns: 50px 80px 60px 60px;
+    gap: 3px;
+    font-family: 'Redaction_50-Regular';
+    background: linear-gradient(black, transparent);
+    position: fixed;
+    border-top: 10px solid ;
 }
 
-.entete a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Avara';
-    font-weight: bold;
+
+.logo {
+    max-height: 50%;
+    width: auto;
+    margin-top: Opx;
 }
 
-.titre {
-    text-decoration: none;
-    color: black;
-    text-align: left;
-    grid-template-columns: 1;
-    font-family: 'Avara';
-    font-weight: 900;
-    font-size: clamp(40px,6vw,60px);
-}
-
-.titre:hover{
-    color: blue;
-}
-
-.sous-titre {
-    text-decoration: none;
-    color: black;
-    text-align: left;
-    grid-row-start: 2;
-    font-family: 'Avara';
-    font-weight: bold;
-    font-style: italic;
-    font-size: clamp(30px,5vw,45px);
-    margin-top: -15px;
-    margin-left: 60px;
-}
-
-.sous-titre:hover{
-    color: rgb(255, 0, 140);
+.logoétoile {
+    max-height: 50%;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 1px;
+    margin-bottom: 5px;
 }
 
 .contact {
-    text-align: right;
-    font-weight: bold;
-    font-size: clamp(7px,3vw,16px);
-}
-
-.contact:hover{
-    color: rgb(255, 115, 0);
+    font-family: 'Redaction 50';
+    text-decoration: none;
+    color: white;
+    grid-column-start: -3;
+    font-size: 15px;
+    text-align: center;
+    align-self: flex-end;
+    margin-bottom: 10px ;
 }
 
 .à-propos {
-    text-align: right;
-    align-self: center;
-    font-weight: bold; 
-    font-size: clamp(7px,3vw,16px);
+    text-decoration: none;
+    font-family: 'Redaction 50';
+    color: white;
+    text-align: center;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
-.à-propos:hover{
-    color: rgb(162, 0, 255);
-}
-
-.index {
+.nav {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 4%;
-    padding : 30px; 
-    margin-top: 50px;
-    max-width: 1920px;
+    width: 123%;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+    margin-left: 0px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-bottom: 2px solid;
+    border-color: white;
+    border-top:2px solid;
 }
 
-@media (min-width:660px){
-    .index{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
-.projet{
-    grid-column: 1/4;
-    font-family: 'Avara';
-    font-weight: bold;
-    font-size: clamp(20px,5vw,35px);
-    margin-bottom: -13px;
-}
-
-.name{
-    grid-column: 1/4;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    align-self:baseline;
-    font-family: 'Avara';
-    font-style: italic;
-    font-size: clamp(20px,5vw,35px);
-    margin-top: 0px;
-}
-
-.about{
-    grid-row-start: 3 ;
-    grid-column: span 2;
-    font-family: 'Avara';
-    font-size: clamp (8px,3vw,16px);
-    margin-top: 0px;
-}
-
-@media (min-width:660px){
-    .about{
-        grid-row-start: 2;
-        grid-column-start: 3 ;
-        grid-column: 3/5;
-    }
-}
-
-img {
+.navdesign {
     display: block;
-    max-width: 100%;
-    border: 2px solid;
-    border-radius: 200px;
-    border-color: rgb(0, 0, 0);
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Redaction 50';
+    font-size: clamp(16px, 3vw, 25px);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.item-h {
-    grid-column: span 2;
+.navphoto {
+    display: block;
+    text-decoration: none;
+    font-family: 'Redaction 50';
+    color: rgb(255, 255, 255);
+    font-size: clamp(16px, 3vw, 25px);
+    text-align: end;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.item-v {
-    grid-row: span 2;
+.nav2 {
+    display: grid;
+    width: 123%;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+    margin-left: 0px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-top: 2px solid;
+    border-color: white;
 }
 
-.item-cube {
-    grid-column: span 2;
-    grid-row: span 2;
+
+.rangée1 {
+    margin:15px;
+    margin-top: 70px;
+    max-height: 100%;
+    display: block;
+}
+
+@media (min-width:560px) {
+    .rangée1 {
+        margin:15px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap: 14.5%;
+    }
+}
+
+.rangée2 {
+    margin:15px;
+    margin-top: 70px;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;  
+}
+
+@media (min-width:560px) {
+    .rangée2 {
+        margin:15px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap: 14%;
+    }
+}
+
+.rangée3 {
+    margin:15px;
+    margin-top: 70px;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;  
+}
+
+@media (min-width:560px) {
+    .rangée3 {
+        margin:15px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap: 12%;
+    }
 }
 
 
+.imgindex {
+    display: block;
+    width: 100%;
+}
 
+.imgindex {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.imgindex:hover  {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+} 
+
+.text1
