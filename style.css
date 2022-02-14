@@ -75,9 +75,7 @@ body {
   display: inline-block;
 }
 
-.bodymargin{
-  margin: 15pxj;
-}
+
 
 .grille {
   display: block;
@@ -184,7 +182,7 @@ body {
 h1 {
   font-family: 'Redaction 50';
   color: white;
-  font-size: clamp(15px, 3vw, 27px);
+  font-size: clamp(23px, 3vw, 27px);
   font-weight: lighter;
 }
 
