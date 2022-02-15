@@ -22,9 +22,15 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Redaction 50';
+  src: url('typo/Redaction_50-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+
 html {
   scroll-behavior: smooth;
-
+  
 }
 
 
@@ -73,6 +79,7 @@ header {
 body {
   background-color: #000000;
   display: inline-block;
+  
 }
 
 
@@ -130,8 +137,6 @@ body {
     position: fixed;
   }
 }
-
-
 
 @media (min-width:800px) {
   .band {
@@ -208,9 +213,11 @@ h1 {
 
 .contact {
   font-family: 'Redaction 50';
+  font-style: bold;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   display: block;
+  
 
 }
 
