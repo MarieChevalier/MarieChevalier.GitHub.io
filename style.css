@@ -30,12 +30,11 @@
 
 html {
   scroll-behavior: smooth;
-  
+  cursor: url('logo/curseur.svg'), auto;
 }
 
 
 /* img */
-
 img {
   width: 100%;
 }
@@ -56,6 +55,7 @@ header {
   border-color: white;
   border-top: 5px solid;
   z-index: 1;
+  
 }
 
 .logoMC {
@@ -77,6 +77,8 @@ header {
 
 /* BODY */
 
+
+
 body {
   background-color: #000000;
   display: inline-block;
@@ -88,6 +90,7 @@ body {
 .grille {
   display: block;
   padding: 5%;
+  
 }
 
 @media (min-width:800px) {
@@ -145,6 +148,7 @@ body {
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
+    
   }
 }
 
