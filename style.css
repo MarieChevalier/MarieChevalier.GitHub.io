@@ -69,7 +69,11 @@ header {
   font-size: clamp(20px, 3vw, 27px);
 }
 
+
+
 .about {
+  border: none;
+  background: none;
   grid-column: 2;
   font-family: 'Redaction 50';
   font-size: clamp(15px, 3vw, 27px);
