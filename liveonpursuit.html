@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marie chevalier - affiche</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo/favicon.ico">
+
+    <style>
+        .show_aboutme{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <header class="header">
+        <a class="logoMC" href="index.html">Marie&nbspChevalier</a>
+        <button onclick="showAboutMe()" type="button" class="about" id="btn_aboutme">?</button>
+    </header>
+    
+    
+    <div class="aboutme show_aboutme" id="aboutme">
+        <div class="textabout">
+            <p class="abouttxt">Je m'appelle Marie Chevalier, j'ai 20 ans et je suis étudiante en deuxième année dans
+                la formation DNA
+                mention design graphique à <a class="link" href="https://www.esad-amiens.fr/"> l'ÉSAD Amiens </a>.
+            </p>
+    
+            <p class="clignote">
+                Je suis à la recherche d'un stage pour une durée de 1 mois à partir du 6 juin 2022
+            </p>
+    
+    
+        </div>
+    
+        <div class="textaboutcontact">
+            <a class="contact" href="mailto:mariechevalier76@gmail.com">mail</a>
+            <a class="contact" href="https://www.instagram.com/mac.graphicdesign/">Instagram</a>
+            <a class="contact" href="https://www.linkedin.com/in/marie-chevalier-8b8b4219b/">Linkedin</a>
+            <a class="contact" href="https://mariechevalier.github.io/img/CV%20marie%20chevalier.jpg" download="MarieChevalier_CV.jpg">télécharge mon CV !</a>
+    
+        </div>
+    
+        <div class="textabout">
+            <p class="abouttxt"> web design and developpement : Marie Chevalier <br>
+                font in use : <a class="link" href="https://www.redaction.us/">Redaction font </a> <br>
+                host by github <br>
+                last update : février 2022 <br>
+                this website does not collect any data <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="grille">
+        <div class="band">
+
+            <div class="projecttop">
+                <a class="" href="index.html"><img src="img/page d'acceuil/affiche live on pursuit.png" alt=""></a>
+                <h1>Live on Pursuit</h1>
+                <p class="description"> Réalisation d'un générique de film fictif sur le thème de la fuite. Projet réalisé dans le cadre du workshop
+                    avec Pierre Boutiller, en collaboration avec Lucile Delaval, Florian De Keizer et Justine Larue.</p>
+                <p class="notes">type : production vidéo<br>
+                    technos : FinalCutPro, Indesign, Phostoshop <br>
+                    date : décembre 2021
+                    musique : Easy - Son Lux</p>
+            </div>
+
+
+        </div>
+
+        <div class="bandspan2">
+
+            <div class="projecttop">
+                <video controls autoplay loop class="video">
+                    <source src="img/live on pursuit/Live on pursuit - Marie Chevalier.mp4" type="video/mp4">
+                    
+                  </video>
+            </div>
+
+           
+
+
+           
+        
+        </div>
+        
+
+       
+
+
+    </div>
+
+    <footer>
+        <script type="application/javascript">
+        function showAboutMe(){
+            document.getElementById('aboutme').classList.toggle('show_aboutme');
+        }
+     </script>   
+    </footer>
+
+
+</body>
+
+</html>

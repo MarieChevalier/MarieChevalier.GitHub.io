@@ -108,6 +108,7 @@ body {
   }
 }
 
+
 /*
 .grille {
   display: block;
@@ -156,6 +157,18 @@ body {
 
   }
 }
+
+@media (min-width:800px) {
+  .bandspan2 {
+    grid-column: span 2;
+    height: calc(99vh - 100px);
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+
+  }
+}
+
 
 .project {
   border-top: 1px solid;
