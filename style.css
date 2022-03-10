@@ -224,6 +224,10 @@ h1 {
   font-weight: lighter;
 }
 
+h1.hover{
+  
+}
+
 .abouttxt {
   color: white;
   font-family: 'Redaction 35';
